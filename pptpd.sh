@@ -8,9 +8,9 @@ iptables -F
 iptables --flush POSTROUTING --table nat
 iptables --flush FORWARD
 
-wget https://sk-centos-vpn.googlecode.com/svn/trunk/dkms-2.0.17.5-1.noarch.rpm
-wget https://sk-centos-vpn.googlecode.com/svn/trunk/pptpd-1.3.4-1.rhel5.1.i386.rpm
-wget https://sk-centos-vpn.googlecode.com/svn/trunk/ppp-2.4.4-9.0.rhel5.i386.rpm
+wget https://github.com/skyershen/vpn/raw/master/dkms-2.0.17.5-1.noarch.rpm
+wget https://github.com/skyershen/vpn/raw/master/ppp-2.4.4-9.0.rhel5.i386.rpm
+wget https://github.com/skyershen/vpn/raw/master/pptpd-1.3.4-1.rhel5.1.i386.rpm
 
 yum -y install make libpcap iptables gcc-c++ logrotate tar cpio perl pam tcp_wrappers
 rpm -ivh dkms-2.0.17.5-1.noarch.rpm
