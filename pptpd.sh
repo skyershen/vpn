@@ -9,8 +9,8 @@ iptables --flush POSTROUTING --table nat
 iptables --flush FORWARD
 
 wget https://raw.githubusercontent.com/skyershen/vpn/master/dkms-2.0.17.5-1.noarch.rpm
-wget https://raw.githubusercontent.com/skyershen/vpn/master/ppp-2.4.4-9.0.rhel5.i386.rpm
 wget https://raw.githubusercontent.com/skyershen/vpn/master/pptpd-1.3.4-1.rhel5.1.i386.rpm
+wget https://raw.githubusercontent.com/skyershen/vpn/master/ppp-2.4.4-9.0.rhel5.i386.rpm
 
 yum -y install make libpcap iptables gcc-c++ logrotate tar cpio perl pam tcp_wrappers
 rpm -ivh dkms-2.0.17.5-1.noarch.rpm
@@ -54,7 +54,6 @@ echo "==========================================================================
 echo " VPN INSTALLATION COMPLETE"
 echo "==============================================================================="
 echo " "
-echo "huan ying shi yong SK de dai ma tuo guan"
 echo "VPN hostname/ip: ${ip}"
 echo "VPN type: PPTP"
 echo "VPN username: vpn"
